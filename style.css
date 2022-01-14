@@ -32,7 +32,6 @@ Global Styles
 }
 body {
 	font-family: var(--ff-primary);
-	background: var(--clr-background);
 	line-height: 1.5;
 }
 ul {
@@ -78,7 +77,6 @@ global classes
 	margin: 0 auto;
 	max-width: 1170px;
 	min-height: auto;
-	background: var(--clr-white);
 	border-radius: 10px;
 	padding: 2rem;
 	margin-top: 1rem;
@@ -94,15 +92,51 @@ Navbar
 */
 .navbar{
 	width: 100%;
-	background: #562EFF;
-	box-shadow: var(--dark-shadow);
+	/* background: #562EFF; */
+	/* box-shadow: var(--dark-shadow); */
 }
-/* .nav-center{
+.nav-center{
 	width: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
-} */
-h1{color: red;}
+}
+.nav-header{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav-header > p{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.nav-links{
+  display: grid;
+  grid-template-columns: 1fr repeat(5, auto);
+}
+.nav-link{
+  margin-right: 1.5rem;
+  display: none;
+  color: black;
+}
+.nav-icon{
+	background: transparent;
+	border: transparent;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+	.nav-header > i{
+    display: none;
+  }
+  .nav-link{
+    display: inline-block;
+  }
+  .nav-header{
+    justify-items: end;
+  }
+}
 /*  
 ===============
 End of Navbar
