@@ -72,7 +72,7 @@ global classes
 	font-weight: 500;
 }
 .section-center{
-	width: 90vw;
+	width: 100%;
 	margin: 0 auto;
 	max-width: 1170px;
 	min-height: auto;
@@ -232,4 +232,81 @@ Company Logo
 ====================
 End of Company Logo
 ====================
+*/
+
+/*  
+====================
+Popular Collection
+====================
+*/
+.section-popular-collection{
+	text-align: center;
+}
+.collection-container{
+	text-align: start;
+	margin: 2rem 0;
+}
+.single-item{
+	padding: 1rem;
+	box-shadow: var(--light-shadow);
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+.item-info{
+	margin-top: 1rem;
+}
+.item-info h2{
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+.item-info h3{
+	font-weight: normal;
+	margin-bottom: 0.5rem;
+}
+.item-rating-info{
+	display: grid;
+	grid-template-columns: auto 1fr;
+	justify-items: start;
+	align-items: center;
+	font-size: 0.8rem;
+}
+.item-rating-number{
+	font-size: 1rem;
+	margin-left: 1rem;
+}
+.star-enable {
+	color: #FFC014;
+}
+.star-disable {
+	color: #AEAEAE;
+}
+.item-info p{
+	color: gray;
+}
+.see-more{
+	text-align: right;
+	color: #E02C6D;
+}
+.see-more i{
+	margin-left: 0.5rem;
+}
+@media screen and (min-width: 676px) {
+  .single-item{
+		margin-bottom: 0;
+	}
+	.collection-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+}
+@media screen and (min-width: 992px) {
+	.collection-container{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+/*  
+=========================
+End of Popular Collection
+=========================
 */
