@@ -142,6 +142,9 @@ Banner Section
 	grid-template-columns: 1fr;
 	row-gap: 1rem;
 }
+.banner-info{
+	text-align: center;
+}
 .banner-info h1, .banner-info p{
 	margin-bottom: 1rem;
 }
@@ -182,6 +185,7 @@ End of Button Animation
 	}
 	.banner-info{
 		order: -1;
+		text-align: start;
 	}
 }
 @media screen and (min-width: 992px) {
@@ -320,6 +324,7 @@ Popular Collection
 .see-more{
 	text-align: right;
 	color: #E02C6D;
+	cursor: pointer;
 }
 .see-more i{
 	margin-left: 0.5rem;
