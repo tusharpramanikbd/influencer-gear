@@ -157,6 +157,31 @@ Banner Section
 .btn-prebook i{
 	margin-left: 0.75rem;
 }
+.btn-prebook{
+	margin-top: 0.5rem;
+	animation: bounce 2s ease infinite;
+}
+/*  
+================
+Button Animation
+================
+*/
+@keyframes bounce {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+/*  
+=======================
+End of Button Animation
+=======================
+*/
 @media screen and (min-width: 768px) {
   .banner-container{
 		grid-template-columns: 1fr 1fr;
