@@ -386,3 +386,49 @@ Photo Gallery
 End of Photo Gallery
 ====================
 */
+
+/*  
+==========
+Footer
+==========
+*/
+.footer{
+	width: 100%;
+	background: #0A0826;
+}
+.footer-container{
+	color: var(--clr-white);
+	padding: 3rem 0;
+	text-align: center;
+}
+.social-icons a{
+	margin: 1rem 0.5rem;
+	color: var(--clr-white);
+	background: rgb(32, 32, 32);
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-container h3{
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+.footer-container p{
+	font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-container h3{
+		font-size: 1.5rem;
+	}
+	.footer-container p{
+		font-size: 0.9rem;
+	}
+}
+/*  
+==============
+End of Footer
+==============
+*/
