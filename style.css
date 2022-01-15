@@ -310,3 +310,79 @@ Popular Collection
 End of Popular Collection
 =========================
 */
+
+/*  
+=============
+Photo Gallery
+=============
+*/
+.section-photo-gallery{
+	text-align: center;
+}
+.photo-container{
+	margin: 2rem 0;
+	display: grid;
+	row-gap: 1rem;
+}
+.photo-container img{
+	border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .photo-container{
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+}
+@media screen and (min-width: 992px) {
+  .photo-container{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (min-width: 1170px) {
+  .photo-container{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(5, 200px);
+		grid-template-areas: 
+		"a a a b"
+		"a a a c"
+		"d d d d"
+		"e f f f"
+		"e g h i";
+	}
+	.photo-container img{
+		height: 100%;
+		object-fit: cover;
+	}
+	.photo-1{
+		grid-area: a;
+	}
+	.photo-2{
+		grid-area: b;
+	}
+	.photo-3{
+		grid-area: c;
+	}
+	.photo-4{
+		grid-area: d;
+	}
+	.photo-5{
+		grid-area: e;
+	}
+	.photo-6{
+		grid-area: f;
+	}
+	.photo-7{
+		grid-area: g;
+	}
+	.photo-8{
+		grid-area: h;
+	}
+	.photo-9{
+		grid-area: i;
+	}
+}
+/*  
+====================
+End of Photo Gallery
+====================
+*/
